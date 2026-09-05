@@ -211,6 +211,34 @@ nav.wrap { display: flex; align-items: center; justify-content: space-between; h
 footer { border-top: 1px solid var(--line); padding: 50px 0; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 24px; font-size: 0.88rem; color: var(--text-faint); }
 footer .foot-links { display: flex; gap: 26px; }
 footer .foot-links a { color: var(--text-dim); transition: color 0.2s ease; }
+/* ---------- WHY CHOOSE US (reasons) ---------- */
+.reasons-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.reason-card {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 4px;
+  padding: 24px 26px; transition: border-color 0.2s ease;
+}
+.reason-card:hover { border-color: var(--line-strong); }
+.reason-card h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 8px; color: var(--gold); }
+.reason-card p { color: var(--text-dim); font-size: 0.92rem; }
+
+/* ---------- REVIEWS ---------- */
+.reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.review-card {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 4px;
+  padding: 26px; display: flex; flex-direction: column; gap: 14px;
+}
+.review-stars { color: var(--gold); font-size: 0.95rem; letter-spacing: 2px; }
+.review-quote { color: var(--text); font-size: 0.95rem; line-height: 1.55; }
+.review-author { display: flex; align-items: center; gap: 12px; margin-top: auto; }
+.review-avatar {
+  width: 38px; height: 38px; border-radius: 50%; flex-shrink: 0;
+  background: linear-gradient(135deg, var(--gold), var(--teal));
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display); font-weight: 700; font-size: 0.85rem; color: #14100a;
+}
+.review-author .name { font-size: 0.9rem; font-weight: 600; }
+.review-author .meta { font-size: 0.8rem; color: var(--text-faint); }
+
 footer .foot-links a:hover { color: var(--text); }
 
 /* ---------- WHATSAPP FLOATING BUTTON ---------- */
@@ -240,7 +268,7 @@ footer .foot-links a:hover { color: var(--text); }
   .mobile-panel a { padding: 10px 0; color: var(--text-dim); }
   .hero { grid-template-columns: 1fr; padding-top: 40px; }
   .hero-visual { height: 320px; order: -1; }
-  .strip .wrap, .category-teaser-grid, .products-grid, .process-list, .why-section, .values-grid, .contact-grid, .form-row { grid-template-columns: 1fr; }
+  .strip .wrap, .category-teaser-grid, .products-grid, .process-list, .why-section, .values-grid, .contact-grid, .form-row, .reasons-grid, .reviews-grid { grid-template-columns: 1fr; }
   .strip-item, .process-item { border-left: none; border-top: 1px solid var(--line); padding-left: 0; }
   .strip-item:first-child, .process-item:first-child { border-top: none; }
   .exploded { order: -1; height: 280px; }
